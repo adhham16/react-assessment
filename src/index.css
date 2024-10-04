@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'Neutra Text';
+    font-style: normal;
+    font-weight: normal;
+    src:local('NeutraText-BookAlt'), url('./assets/fonts/neutra-text-alt-587261020eccb.woff') format('woff'); 
+}
 body {
-    background-color: #ebebeb;
+    background-color: #ffffff;
     color: #322625;
+    font-family: 'Neutra Text', sans-serif;
 }
 
 table {
@@ -8,14 +15,22 @@ table {
     border-collapse: collapse;
 }
 
+th {
+    background-color: #c0e3e5;
+}
+
 th, td {
     border: 1px solid #322625;
     padding: 10px;
     text-align: left;
+    color: #322625;
 }
 
 input {
     margin-bottom: 10px;
     padding: 5px;
     border: 1px solid #c0e3e5;
+}
+.home-link{
+    text-decoration: none;
 }

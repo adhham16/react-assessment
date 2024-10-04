@@ -7,16 +7,7 @@ const Products = () => {
 
     return (
         <div style={{ fontFamily: 'Neutra Text' }}>
-            <h1>Products</h1>
-            <label>
-                Page Size:
-                <select value={pageSize} onChange={(e) => setPageSize(e.target.value)}>
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="50">50</option>
-                </select>
-            </label>
+            <h1><a href='/' class='home-link'>Home</a>/Products</h1>
             <DataTable type="products" />
         </div>
     );

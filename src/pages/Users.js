@@ -3,20 +3,11 @@ import DataTable from '../components/DataTable';
 import { useDataContext } from '../context/DataContext';
 
 const Users = () => {
-    const { pageSize, setPageSize } = useDataContext();
+    const { rowsPerPage, setRowsPerPage } = useDataContext();
 
     return (
         <div style={{ fontFamily: 'Neutra Text' }}>
-            <h1>Users</h1>
-            <label>
-                Page Size:
-                <select value={pageSize} onChange={(e) => setPageSize(e.target.value)}>
-                    <option value="5">5</option>
-                    <option value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="50">50</option>
-                </select>
-            </label>
+            <h1><a href='/' class='home-link'>Home</a> / Users</h1>
             <DataTable type="users" />
         </div>
     );
